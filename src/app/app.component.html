@@ -1,8 +1,19 @@
-
-<app-header></app-header>
-<div class="container">
-    <app-todo></app-todo>
-</div>
+<ng-container>
+    <app-header></app-header>
+    
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="../assets/todo.png" alt="Image unavailable" class="img-fluid">
+        </div>
+        <div class="col-lg-5">
+            <div class="container">
+                <app-todo-form></app-todo-form>
+                <app-todo></app-todo>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+</ng-container>
 
 
 
