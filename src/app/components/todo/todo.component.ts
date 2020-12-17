@@ -11,13 +11,13 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 })
 export class TodoComponent implements OnInit {
   faTrashAlt = faTrashAlt;
-  todo: Todo[];
+  todos: Todo[];
 
   constructor(private todoService: TodoService) { }
 
   ngOnInit() {
     this.todoService.getTodos().subscribe((res) => {
-      this.todo = res;
+      this.todos = res;
     })
   }
 
